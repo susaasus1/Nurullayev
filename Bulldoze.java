@@ -8,7 +8,7 @@ public class Bulldoze extends PhysicalMove {
         p.setMod(Stat.SPEED, -1);
     }
 
-    public String describe(){
+    protected String describe(){
         return "Использует способность Bulldoze";
     }
 }
