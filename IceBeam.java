@@ -8,7 +8,7 @@ public class IceBeam extends SpecialMove {
         Effect e=new Effect().chance(0.1).condition(Status.FREEZE);
         p.addEffect(e);
     }
-    public String describe(){
+    protected String describe(){
         return "Использует способность Ice Beam";
     }
 }
