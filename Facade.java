@@ -5,7 +5,7 @@ public class Facade extends PhysicalMove {
         super(Type.NORMAL,70,100);
     }
 
-    public String describe(){
+    protected String describe(){
         return "Использует способность Facade";
     }
 }
