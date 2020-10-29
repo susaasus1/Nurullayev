@@ -8,4 +8,16 @@ public class Facade extends PhysicalMove {
     protected String describe(){
         return "Использует способность Facade";
     }
+    protected double calcBaseDamage (Pokemon att, Pokemon def) {
+		double d = super.calcBaseDamage(att, def);
+
+		switch (att.getCondition()) {
+		case BURN:
+		case POISON:
+		case PARALYZE:
+			d *= 2.0;
+		}
+
+		return d;
+	}
 }
