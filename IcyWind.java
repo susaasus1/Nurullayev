@@ -7,7 +7,7 @@ public class IcyWind extends SpecialMove {
     protected void applyOppEffects(Pokemon p){
         p.setMod(Stat.SPEED, -1);
     }
-    public String describe(){
+    protected String describe(){
         return "Использует способность Icy Wind";
     }
 }
